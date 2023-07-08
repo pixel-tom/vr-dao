@@ -6,7 +6,7 @@ import Links from './components/Links'
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen items-center justify-between bg-[url(/background.png)]">
-      <Navbar />
+      <Navbar activePage={''} />
 
       <div className="flex justify-between w-full">
         <div>
