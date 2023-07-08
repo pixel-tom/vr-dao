@@ -7,7 +7,7 @@ import SplPortfolio from "./components/SplPortfolio";
 export default function Treasury() {
   return (
     <main className="min-h-screen items-center justify-between bg-[url(/background.png)]">
-      <Navbar />
+      <Navbar activePage={"treasury"} />
       <div className="mx-24 mt-8">
         <Pfp />
       </div>
