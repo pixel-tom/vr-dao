@@ -31,3 +31,76 @@ export interface Collection {
     nrt_price_delta: number;
     nrt_volume_delta: number;
   }
+
+  export interface CollectionStats {
+    collectionName: string;
+    floorPriceLamports: number;
+    granularity: string;
+    helloMoonCollectionId: string;
+    startTime: number;
+    high: number;
+    low: number;
+    open: number;
+    close: number;
+    volume: number;
+    slug: string;
+    supply: number;
+    currentOwnerCount: number;
+    marketCapSol: number | null;
+    averageWashScore: number;
+    listingCount: number | null;
+    mintPriceMode: number | null;
+    narrative: string;
+    magic_eden_holding_proportion: number;
+    sample_image: string;
+    external_url: string;
+    owners_avg_usdc_holdings: number;
+    proportion_owning_solana_monkey_business: number | null;
+    avg_price_sol: number | null;
+    avg_price_usd: number | null;
+    sol_price_usd: number;
+    sol_price_usd_last_updated: number;
+    magic_eden_holding: number;
+    market_cap_usd: number | null;
+    avg_price_now_30_minutes: number;
+    smart_inflow_30_minutes: number;
+    smart_money_netflow_score_30_minutes: number;
+    cnt_buyers_30min: number;
+    cnt_sellers_30min: number;
+    avg_price_now_1_hour: number;
+    smart_inflow_1_hour: number;
+    smart_money_netflow_score_1_hour: number;
+    cnt_buyers_1h: number;
+    cnt_sellers_1h: number;
+    avg_price_now_6_hour: number;
+    smart_inflow_6_hour: number;
+    smart_money_netflow_score_6_hour: number;
+    cnt_buyers_6h: number;
+    cnt_sellers_6h: number;
+    avg_price_now_12_hour: number;
+    smart_inflow_12_hour: number;
+    smart_money_netflow_score_12_hour: number;
+    cnt_buyers_12h: number;
+    cnt_sellers_12h: number;
+    cnt_buyers_1d: number;
+    cnt_sellers_1d: number;
+    cnt_buyers_7d: number;
+    cnt_sellers_7d: number;
+    smart_inflow_1_month: number;
+    smart_money_netflow_score_1_month: number;
+    avg_price_now_1_month: number;
+    cnt_buyers_28d: number;
+    cnt_sellers_28d: number;
+  }
+  
+export interface CandleStick {
+    helloMoonCollectionId: string;
+    granularity: string;
+    lastblockid: number;
+    startTime: number;
+    high: number;
+    low: number;
+    open: number;
+    close: number;
+    volume: number;
+  }

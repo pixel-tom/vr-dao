@@ -1,26 +1,8 @@
 import { useState, useEffect } from "react";
 import Image from 'next/image';
 import axios, { Method } from 'axios';
+import { NFT } from "../interfaces/interfaces";
 
-interface NFT {
-  nftMint: string;
-  ownerAccount: string;
-  metadataAddress: string;
-  metadataJson: {
-    name: string;
-    symbol: string;
-    uri: string;
-    sellerFeeBasisPoints: number;
-    creators: {
-      address: string;
-      verified: boolean;
-      share: number;
-    }[];
-  };
-  nftCollectionMint: string | null;
-  verifiedCreators: string[] | null;
-  helloMoonCollectionId: string | null;
-}
 
 export default function NftPortfolio() {
   const [nfts, setNfts] = useState<NFT[]>([]);

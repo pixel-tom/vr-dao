@@ -1,30 +1,7 @@
 import { useState, useEffect } from "react";
 import axios, { Method } from "axios";
+import { Token, TokenMetadata } from "../interfaces/interfaces";
 
-interface Token {
-  mint: string;
-  owner: string;
-  amount: string;
-  delegateOption: number;
-  delegate: string;
-  state: number;
-  isNativeOption: number;
-  isNative: string;
-  delegatedAmount: string;
-  closeAuthorityOption: number;
-  closeAuthority: string;
-}
-
-interface TokenMetadata {
-  id: string;
-  mint: string;
-  name: string;
-  symbol: string;
-  decimals: number;
-  slug: string;
-  coingeckoId: string | null;
-  lifetimeSwapCount: number;
-}
 
 export default function SplPortfolio() {
   const [tokens, setTokens] = useState<Token[]>([]);

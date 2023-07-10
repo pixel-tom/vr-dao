@@ -21,3 +21,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #444444;
 }
+
+.chartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

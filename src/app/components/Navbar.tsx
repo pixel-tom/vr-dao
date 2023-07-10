@@ -22,6 +22,9 @@ export default function Navbar({ activePage }: NavbarProps) {
   const handleExplorerClick = () => {
     router.push("/explorer");
   };
+  const handleLoanAggClick = () => {
+    router.push("/loanAgg");
+  };
 
   return (
     <header className="w-full">
@@ -57,6 +60,14 @@ export default function Navbar({ activePage }: NavbarProps) {
                 }`}
               >
                 EXPLORER
+              </a>
+              <a
+                onClick={handleLoanAggClick}
+                className={`text-gray-200 hover:text-white my-auto px-4 py-2 text-sm font-medium ${
+                  activePage === "loanAgg" ? "border-b-2 border-gray-500" : ""
+                }`}
+              >
+                LOANS
               </a>
               <div className="my-auto mb-[3px]">
                 <WalletMultiButton />
